@@ -44,7 +44,10 @@ php artisan msg:swoole start
         //是否验证客户端的信息，默认开启
         'is_verification'=>true
  ]
+
 2.安装原生jwt: github地址：https://github.com/cdoco/php-jwt
+
+
 3.使用,加密$receiver_id后发给客户端
 app('msg-swoole.encryption')->encrypt($receiver_id);
 
