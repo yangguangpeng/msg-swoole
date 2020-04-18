@@ -1,0 +1,17 @@
+{
+    "name": "perry\/msg-swoole",
+    "description": "msg-swoole",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "perry",
+            "email": "646138471@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Perry\\MsgSwoole\\": "src"
+        }
+    }
+}
