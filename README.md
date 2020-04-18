@@ -9,7 +9,7 @@
     pecl install redis
     2.安装swoole拓展
     pecl install swoole
-## Installing
+## 安装和使用
 
 1.下载
 ```shell
@@ -21,7 +21,6 @@ Perry\MsgSwoole\SwooleServiceProvider::class
 3.生成配置文件
 php artisan vendor:publish --provider="Perry\MsgSwoole\SwooleServiceProvider"
 
-## Usage
 4.发布信息
     $receiver_id：接受者id，（这里的$receiver_id是明文）
     $content：发布的内容
