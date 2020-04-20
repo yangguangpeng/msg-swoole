@@ -31,7 +31,7 @@ php artisan vendor:publish --provider="Perry\MsgSwoole\SwooleServiceProvider"
     a.门面模式调用
     
     在app.php加上alias加上门面别名配置：'MsgPublish'=>Perry\MsgSwoole\Facades\PublishFacades::class
-    代码：MsgPublish::setReceiver($receiver_id)->publish();
+    代码：MsgPublish::setReceiver($receiver_id)->publish($content);
     
     b.服务容器调用
     代码：app('msg-swoole.publish')->setReceiver($receiver_id)->publish($content)
