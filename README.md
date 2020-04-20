@@ -13,7 +13,7 @@
 
 1.下载
 ```shell
-$ composer require perry/msg-swoole -vvv
+$ composer require perry/msg-swoole
 ```
 2.配置上服务提供者
 Perry\MsgSwoole\SwooleServiceProvider::class
@@ -29,15 +29,16 @@ php artisan vendor:publish --provider="Perry\MsgSwoole\SwooleServiceProvider"
     代码：MsgPublish::setReceiver($receiver_id)->publish();
     b.服务容器调用
     代码：app('msg-swoole.publish')->setReceiver($receiver_id)->publish($content)
+    
+5.启动websocket服务
+php artisan msg:swoole start
 
-5.演示demo路由，路由前缀是msg-swoole
+6.演示demo路由，路由前缀是msg-swoole
 
 Route::get('/', 'DemoController@show');
 
 Route::get('/publish', 'DemoController@publish');
 
-6.启动websocket服务
-php artisan msg:swoole start
 
 ## 安全考虑,对来自客户端的$receiver_id进行加密
 1.开启配置文件
