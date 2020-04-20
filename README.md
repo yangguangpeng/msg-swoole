@@ -23,6 +23,7 @@ Perry\MsgSwoole\SwooleServiceProvider::class
 php artisan vendor:publish --provider="Perry\MsgSwoole\SwooleServiceProvider"
 
 4.发布信息
+
     参数：
     $receiver_id：接受者id，（这里的$receiver_id是明文）
     $content：发布的内容
