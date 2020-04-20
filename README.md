@@ -23,11 +23,15 @@ Perry\MsgSwoole\SwooleServiceProvider::class
 php artisan vendor:publish --provider="Perry\MsgSwoole\SwooleServiceProvider"
 
 4.发布信息
+    参数：
     $receiver_id：接受者id，（这里的$receiver_id是明文）
     $content：发布的内容
+    
     a.门面模式调用
+    
     在app.php加上alias加上门面别名配置：'MsgPublish'=>Perry\MsgSwoole\Facades\PublishFacades::class
     代码：MsgPublish::setReceiver($receiver_id)->publish();
+    
     b.服务容器调用
     代码：app('msg-swoole.publish')->setReceiver($receiver_id)->publish($content)
     
