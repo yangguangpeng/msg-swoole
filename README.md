@@ -7,6 +7,7 @@
 ## 环境准备
     1.安装redis拓展
     pecl install redis
+    如果报错：Cannot find igbinary.h，执行 pecl install igbinary命令
     2.安装swoole拓展
     pecl install swoole
 ## 安装和使用
