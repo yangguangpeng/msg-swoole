@@ -8,7 +8,7 @@
     1.安装redis拓展
     pecl install redis
     2.安装swoole拓展
-    pecl install swoole
+    pecl install swoole -y
 ## 安装和使用
 
 1.下载
