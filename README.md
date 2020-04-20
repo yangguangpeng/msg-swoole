@@ -31,7 +31,9 @@ php artisan vendor:publish --provider="Perry\MsgSwoole\SwooleServiceProvider"
     代码：app('msg-swoole.publish')->setReceiver($receiver_id)->publish($content)
 
 5.演示demo路由，路由前缀是msg-swoole
+
 Route::get('/', 'DemoController@show');
+
 Route::get('/publish', 'DemoController@publish');
 
 6.启动websocket服务
