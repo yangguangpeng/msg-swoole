@@ -6,9 +6,9 @@
     实现实时推送消息到客户端
 ## 环境准备
     1.安装redis拓展
-    pecl install redis -y
+    pecl install redis
     2.安装swoole拓展
-    pecl install swoole -y
+    pecl install swoole
 ## 安装和使用
 
 1.下载
